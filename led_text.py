@@ -13,12 +13,12 @@ def scroll_text(matrix, text):
 	draw = ImageDraw.Draw(txt)
 
 	for n in range(width + 128):
-		draw.text((0, -4), text, fill = (255, 255, 255, 0), font = font)
+		draw.text((0, -4), text, fill = (128, 128, 128, 0), font = font)
 		matrix.SetImage(txt.im.id, 128 - n, 0)
-		time.sleep(0.05)
+		time.sleep(0.01)
 
 	matrix.Clear()
 
 if __name__ == "__main__":
 	matrix = Adafruit_RGBmatrix(32, 4)
-	scroll_text(matrix, "ayyyyyyyylmao")
+	scroll_text(matrix, "Bush did 9/11 ;)")
