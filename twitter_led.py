@@ -1,6 +1,6 @@
 import Image
 import twitter
-import led_text
+import text_led
 import time
 
 from rgbmatrix import Adafruit_RGBmatrix
