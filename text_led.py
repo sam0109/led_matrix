@@ -4,6 +4,7 @@ import Image
 import ImageDraw
 import ImageFont
 import time
+import sys
 from rgbmatrix import Adafruit_RGBmatrix
 
 def scroll_text(matrix, text):
@@ -21,4 +22,7 @@ def scroll_text(matrix, text):
 
 if __name__ == "__main__":
 	matrix = Adafruit_RGBmatrix(32, 4)
-	scroll_text(matrix, "Bush did 9/11 ;)")
+	if len(sys.argv) > 1:
+		scroll_text(matrix, sys.argv[1])
+	else:
+		scroll_text(matrix, "Bush did 9/11 ;)")
