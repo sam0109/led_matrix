@@ -25,4 +25,4 @@ if __name__ == "__main__":
 	if len(sys.argv) > 1:
 		scroll_text(matrix, sys.argv[1])
 	else:
-		scroll_text(matrix, "Bush did 9/11 ;)")
+		scroll_text(matrix, "No text recieved.")
