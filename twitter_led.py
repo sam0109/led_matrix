@@ -17,5 +17,5 @@ while(1):
 	statuses = api.GetUserTimeline(screen_name="realDonaldTrump")
 	if(saved_status != statuses[0].text):
 		saved_status = statuses[0].text
-		led_text.scroll_text(matrix, saved_status)
+		text_led.scroll_text(matrix, saved_status)
 	time.sleep(60)
